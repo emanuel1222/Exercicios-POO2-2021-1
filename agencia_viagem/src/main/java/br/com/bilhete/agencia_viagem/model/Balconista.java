@@ -11,16 +11,16 @@ import javax.persistence.OneToOne;
 
 import antlr.collections.List;
 
-@Entity
+//@Entity
 public class Balconista extends Pessoa{
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private double salario;
     private boolean deFerias;
-    @OneToOne
-    private Agencia nomeAgencia;
+    //@OneToOne
+    //private Agencia nomeAgencia;
 
     //private LinkedList<Bilhete> bilhetes = new LinkedList<Bilhete>();
 
@@ -28,7 +28,7 @@ public class Balconista extends Pessoa{
         super(nome, cpf, telefone, sexo, email, endereco);
         this.setSalario(salario);
         this.setDeFerias(deFerias);
-        this.setAgencia(nomeAgencia);
+        //this.setAgencia(nomeAgencia);
     }
 
     public void setSalario(double salario){
@@ -46,7 +46,7 @@ public class Balconista extends Pessoa{
     public boolean getDeFerias(){
         return deFerias;
     }
-
+/*
     public void setAgencia(Agencia agencia){
         this.nomeAgencia = agencia;
     }
@@ -55,5 +55,5 @@ public class Balconista extends Pessoa{
         return nomeAgencia;
     }
 
-
+*/
 }

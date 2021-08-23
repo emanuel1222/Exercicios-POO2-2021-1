@@ -14,7 +14,7 @@ public class BalconistaController {
     @RequestMapping("/balconista")
 
     public BalconistaDto getBalconistas(){
-        Agencia agencia = new Agencia("Agencia Vix", "Av. Vitoria", true);
+        Agencia agencia = new Agencia();
         Balconista balconista = new Balconista("Joao pedro","15106186796", "99875236", "masculino", "joao.agencia@gmail.com", "av. dante micheline, vitoria/es",2500.00,true,agencia);
         return BalconistaDto.converter(balconista);
     }
