@@ -11,9 +11,9 @@ public class AgenciaDto {
     private int estahAberta;
 
     public AgenciaDto(Agencia agencia){
-        this.nome = ((Agencia) agencia).getNome();
-        this.endereco = ((Agencia)agencia).getEndereco();
-        this.estahAberta = ((Agencia)agencia).getEstahAberta();
+        this.nome = agencia.getNome();
+        this.endereco = agencia.getEndereco();
+        this.estahAberta = agencia.getEstahAberta();
     }
 
     public String getNome(){
