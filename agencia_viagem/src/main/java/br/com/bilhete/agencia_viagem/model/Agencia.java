@@ -27,7 +27,7 @@ public class Agencia {
     private String nome;
     @Column(name = "endereco", nullable = false)
     private String endereco;
-    @Column(name = "estahAberta", nullable = false)
+    @Column(name = "estahAberta", nullable = true)
     private int estahAberta;
 
     //@OneToMany(mappedBy = "cpf")
@@ -40,7 +40,25 @@ public class Agencia {
     //private LinkedList<Bilhete> bilhetes = new LinkedList<Bilhete>();
 
     
-    public String getNome(){
+    
+    public Agencia(String nome, String endereco) {
+        this.setNome(nome);
+        this.setEndereco(endereco);
+    }
+
+    public Agencia() {
+
+	}
+
+	public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+    
+	public String getNome(){
         return nome;
     }
 

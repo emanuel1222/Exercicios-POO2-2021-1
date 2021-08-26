@@ -24,7 +24,7 @@ public class Balconista extends Pessoa{
 
     //private LinkedList<Bilhete> bilhetes = new LinkedList<Bilhete>();
 
-    public Balconista (String nome, String cpf, String telefone, String sexo, String email, String endereco, double salario, boolean deFerias, Agencia nomeAgencia){
+    public Balconista (String nome, String cpf, String telefone, String sexo, String email, String endereco, double salario, boolean deFerias ,Agencia nomeAgencia){
         super(nome, cpf, telefone, sexo, email, endereco);
         this.setSalario(salario);
         this.setDeFerias(deFerias);
